@@ -18,7 +18,7 @@ export default function Navbar({ darkSide, toggleDarkMode }) {
     <Disclosure as="nav" className=" fixed w-full top-0 ">
       {({ open }) => (
         <>
-          <div className=" mx-auto px-2 sm:px-6 lg:px-8 bg-emerald-300 dark:bg-gray-800">
+          <div className=" mx-auto px-2 sm:px-6 lg:px-8 bg-emerald-300 dark:bg-gray-800 border-b border-b-emerald-400 dark:border-b-gray-900">
             <div className=" flex h-20  justify-between">
               <div className="my-auto sm:hidden">
                 {/* Mobile menu button*/}
@@ -169,7 +169,7 @@ export default function Navbar({ darkSide, toggleDarkMode }) {
                     className={classNames(
                       item.current
                         ? "bg-gray-900 text-white"
-                        : "text-gray-800 hover:bg-emerald-400 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-slate-100",
+                        : "text-gray-800 hover:bg-emerald-800 hover:text-slate-100 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-slate-100",
                       "block px-3 py-2 rounded-md text-base font-medium"
                     )}
                     aria-current={item.current ? "page" : undefined}

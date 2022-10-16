@@ -12,14 +12,24 @@ export default function Home({ darkSide }) {
             alt="mine pic"
           />
         </div>
-        <div className="">
-          <h1 className="title-font sm:text-4xl text-3xl  font-semibold text-indigo-700 dark:text-white text-center">
-            Hi, I'm Achem Habib.
-          </h1>
+        <div className="flex flex-col gap-y-6">
+          <div>
+            <h1 className="title-font sm:text-4xl text-3xl  font-semibold text-indigo-700 dark:text-white text-center">
+              Hi, I'm Achem Habib.
+            </h1>
 
-          <p className=" sm:text-4xl text-lg mb-4 font-medium text-cyan-700 dark:text-white text-center">
-            And I'm a full stack web developer.
-          </p>
+            <p className=" sm:text-4xl text-lg mb-4 font-medium text-cyan-700 dark:text-white text-center">
+              And I'm a full stack web developer.
+            </p>
+          </div>
+          <div className="flex gap-x-4 mx-auto">
+            <button className="px-4 py-2 bg-indigo-700 hover:bg-indigo-900 text-lg font-medium border border-indigo-400 rounded-md text-white ">
+              Resume
+            </button>
+            <button className="px-4 py-2 bg-purple-800 hover:bg-purple-900 text-lg font-medium border border-purple-500 rounded-md text-white ">
+              Work with me
+            </button>
+          </div>
         </div>
       </div>
     </div>
