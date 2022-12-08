@@ -1,20 +1,60 @@
+.fade-anim img {
+  animation: fadeAnim 0.5s ease-out;
+}
+
+@keyframes fadeAnim {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.custom-shape-divider-top-1666266463 {
+.wave-home {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1666266463 svg {
+.wave-home svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 203px;
+  width: calc(129% + 1.3px);
+  height: 132px;
+}
+
+.wave-home .shape-fill {
+  fill: #10b981;
+}
+
+.wave-about {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-about svg {
+  position: relative;
+  display: block;
+  width: calc(163% + 1.3px);
+  height: 132px;
   transform: rotateY(180deg);
+}
+
+.wave-about .shape-fill {
+  fill: #fb923c;
 }

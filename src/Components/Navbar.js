@@ -3,8 +3,8 @@ import {} from "@heroicons/react/24/outline";
 import { Fragment } from "react";
 
 const navigation = [
-  { name: "About", href: "#", current: true },
-  { name: "Skill", href: "#", current: false },
+  { name: "About", href: "#about", current: true },
+  { name: "Skill", href: "#skills", current: false },
   { name: "Work", href: "#", current: false },
   { name: "Contact", href: "#", current: false },
 ];
@@ -15,7 +15,7 @@ function classNames(...classes) {
 
 export default function Navbar({ darkSide, toggleDarkMode }) {
   return (
-    <Disclosure as="nav" className=" fixed w-full top-0 ">
+    <Disclosure as="nav" className=" fixed w-full top-0 z-30">
       {({ open }) => (
         <>
           <div className=" mx-auto px-2 sm:px-6 lg:px-8 bg-emerald-300 dark:bg-gray-800 border-b border-b-emerald-400 dark:border-b-gray-900">
